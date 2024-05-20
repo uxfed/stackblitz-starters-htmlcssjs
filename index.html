@@ -6,6 +6,12 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width" />
   <link rel="stylesheet" href="styles.css" />
+  <style>
+    .button {
+      background-color: blue;
+      color: white;
+    }
+  </style>
 </head>
 
 <body>
@@ -14,9 +20,13 @@
     <a href="/page2.html">Other page</a>
   </nav>
 
-  <main id="app">
     <h1>Home page</h1>
-  </main>
+
+  <main id="app"></main>
+
+    <p>
+      <button onclick="rerender()">Rerender</button>
+    </p>
 
   <script src="react.development.js"></script>
   <script src="react-dom.development.js"></script>
